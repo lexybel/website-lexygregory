@@ -1,0 +1,281 @@
+.intro-page {
+    position: relative;
+}
+
+.tree-image-box {
+    position: absolute;
+    background-color: rgba(28, 37, 36, 0.6);  
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+.tree-image {
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.intro-box {
+    position: absolute;
+    background-color: rgba(28, 37, 36, 1);
+    opacity: 90%; 
+    width: 75%;
+    height: 400px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 10;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.bold-words {
+    color: rgb(229, 229, 229);
+    font-family: 'Didot', serif, 'Times New Roman', Times, sans-serif;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out; 
+}
+
+.intro-paragraph {
+    color: rgb(229, 229, 229);
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.work-with-me-button {
+    background-color: rgba(30, 29, 29, 1);
+    color: rgb(229, 229, 229);
+    font-family: 'Didot', serif, 'Times New Roman', Times, sans-serif; 
+    font-size: 15px;
+    padding: 15px;
+    border: 1px solid rgb(229, 229, 229);
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s, opacity 0.15s;
+}
+
+.work-with-me-button:hover {
+    background-color: rgb(229, 229, 229);
+    color: rgba(30, 29, 29, 1); 
+}
+
+.work-with-me-button:active {
+    opacity: 0.6;
+}
+
+.about-me-section {
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-box {
+    background-image: linear-gradient(145deg, rgba(108, 119, 99, 1), rgb(151, 167, 138));
+    height: 400px;
+    width: 100%;
+}
+
+.about-me-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    
+}
+
+.about-me-left-side{
+    margin-left: 18%;
+}
+
+.welcome-text {
+    position: relative;
+    color: rgb(34, 44, 35);
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.welcome-paragraph {
+    position: relative;
+    color: rgb(229, 229, 229);
+    font-family: 'Didot', serif, 'Times New Roman', Times, sans-serif; 
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 10px; 
+    margin-bottom: 30px;
+}
+
+.know-me-button{
+    display: inline;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    margin-left: 10px;
+    background-color: rgba(28, 37, 36, 1);
+    color: rgb(229, 229, 229);
+    font-family: 'Didot', serif, 'Times New Roman', Times, sans-serif; 
+    font-size: 15px;
+    padding: 15px;
+    border: 1px solid rgb(229, 229, 229);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.15s, color 0.15s, opacity 0.15s;  
+}
+
+.know-me-button:hover {
+    background-color: rgb(229, 229, 229);
+    color: rgba(30, 29, 29, 1); 
+}
+
+.know-me-button:active {
+    opacity: 0.6;
+}
+
+.my-photo {
+    margin-top: -25px; 
+    height: 450px;
+    width: 100%;
+    max-width: 600px;
+    object-fit: cover;
+}
+
+.projects-section {
+    height: 575px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(28, 37, 36, 1);
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow-x: auto; 
+}
+
+.projects-title {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center; 
+    background-color: rgba(108, 119, 99, 1);
+    color: rgb(229, 229, 229);
+    font-family: 'Didot', serif, 'Times New Roman', Times, sans-serif; 
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 80%;
+}
+
+.projects-grid {
+    margin-top: 30px;
+    overflow-x: auto; 
+    display: flex; 
+    flex-wrap: nowrap; 
+    gap: 60px; 
+    justify-content: flex-start; 
+}
+
+.project {
+    flex: 0 0 auto; 
+    width: 250px; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-top: 60px;
+}
+
+.project-image {
+    background-color: rgba(30, 29, 29, 1);
+    height: 240px;
+    width: 240px;
+    margin-bottom: 15px;
+    border-width: 2px;
+}
+
+.project-photos{
+    height: 230px;
+    width: 230px;
+    margin-top: 5px;
+    margin-left: 5px;
+    object-fit: cover;
+    align-items: center;
+}
+
+.project-name {
+    color: rgb(229, 229, 229);
+    font-family: 'Didot', serif, 'Times New Roman', Times, sans-serif; 
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.project-info {
+    color: rgb(229, 229, 229);
+    font-size: 15px;
+    font-family: 'Didot', serif, 'Times New Roman', Times, sans-serif; 
+}
+
+@media(max-width:900px){
+    .tree-image-box, .tree-image {
+        height: 650px;
+    }
+    .intro-box{
+        height: 500px;
+    }
+}
+
+@media(max-width:795px){
+    .about-me-grid {
+        grid-template-columns: 1fr; 
+    }
+    .welcome-box {
+        margin-top: 10px;
+        height: auto; 
+    }
+    .welcome-paragraph{
+        margin-right: 30px;
+    }
+    .about-me-right-side{
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+    }
+    .my-photo {
+        margin-top: 35px;
+        height: 450px; 
+        width: 100%; 
+        max-width: 500px;
+        padding-bottom: 30px;
+    }
+    .about-me-section {
+        height: auto; 
+    }
+}
+
+@media(max-width:650px){
+    .tree-image-box, .tree-image {
+        height: 700px;
+    }
+    .intro-box{
+        height: 590px;
+    } 
+    .work-with-me-button{
+        margin-top:-15px;
+    }
+}

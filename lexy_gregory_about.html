@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexy Gregory's Website</title>
+
+    <link rel="stylesheet" href="styles/lexy_gregory_about.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-branding">LEXY GREGORY</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="lexy_gregory.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lexy_gregory_about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lexy_gregory_projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sendmail/index.php" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main> 
+        <div class="about-page">
+            <div class="image-display">
+                <div class="bc-image-box"></div>
+                <img class="bc-images" src="" id="photo" style="opacity: 1;">
+            </div>
+            <div class="introduction">
+                <div class="hello">HELLO!</div>
+                <div class="intro-paragraph">
+                    My name is Lexy Gregory.
+                </div>
+            </div>
+        </div>
+        <div class="about-page-2">
+            <div class="text">
+                <div class="get-to-know">Get to know me.</div>
+                <div class="text-about-me">
+                <p>
+                    I am a third-year Computer Science student at Queen's University, specializing in software design. My interests include software development, both back-end and front-end design, as well as machine learning and robotics. I am passionate about learning and consistently seek opportunities that challenge and motivate me to expand beyond my current knowledge and skillset. <br> <br>
+                                
+                    Solving puzzles and engaging in games has always captivated me, and coding, to me, is like a grand puzzle waiting to be pieced together. <br> <br>
+
+                    Originating from beautiful British Columbia, I was born and raised in Vancouver, so it is appropriate to assume that I am an outdoors enthusiast. Beyond my academic pursuits, my favourite pastime involves immersing myself in nature; whether it's running along Jericho Beach, embarking on camping trips, catching waves in Tofino, or leisurely biking around Stanley Park. <br> <br>
+                    
+                    <strong>Skills: Python, Java, C, C++, JavaScript, HTML/CSS, MATLAB, Prolog, Haskell, Bash, Figma, UI/UX design.</strong>
+                </p>
+                </div>
+            </div>
+            <img class="photo-of-me" src="images/lexy-photo2.jpeg"></div>
+        </div>
+        <div class="fun-stuff-about-me">
+            <div class="fun-title">PASSIONS IN PIXELS</div>
+            <div class="scroll-container">
+                <img src="images/camping.JPG" alt="fun-things">
+                <img src="images/coffee.jpeg" alt="fun-things">
+                <img src="images/surf.jpeg" alt="fun-things" >
+                <img src="images/skiing.JPG" alt="fun-things">
+                <img src="images/concerts.jpg" alt="fun-things">
+                <img src="images/dog.jpeg" alt="fun-things" >
+            </div>
+        </div>
+        <div class="contact-section">
+            <div class="connect-title">
+                LET'S CONNECT
+            </div>
+            <div class="contacts-grid">
+                <div class="contact-phone">
+                    <img src="icons/phone.png" class="icon">
+                    <div class="contact-text">(778) 882-1503</div>
+                </div>
+                <div class="contact-mail">
+                    <img class="icon" src="icons/mail.png">
+                    <div class="contact-text">alexysgregory@gmail.com</div>
+                </div>
+                <button class="contact-linkedin" onclick="goToLinkedIn()">
+                    <img class="icon" src="icons/linkedin.png" alt="LinkedIn Icon">
+                    <div class="contact-text">LinkedIn</div>
+                </button>
+                
+                <script>
+                    function goToLinkedIn() {
+                        window.open("https://www.linkedin.com/in/lexy-gregory", "_blank");
+                    }
+                </script>
+            </div>
+        </div>
+    </main>
+    <script src="nav.js"></script>
+    <script src="photos.js"></script>
+</body>
+</html>

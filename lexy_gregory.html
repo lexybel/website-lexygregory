@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexy Gregory's Website</title>
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/intro-page.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-branding">LEXY GREGORY</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="lexy_gregory.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lexy_gregory_about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lexy_gregory_projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sendmail/index.php" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main> 
+        <div class="intro-page">
+            <div class="tree-image-box"></div>
+            <img class="tree-image" src="images/trees.jpeg">
+            <div class="intro-box">
+                <div class="bold-words" id="word" style="opacity: 1;">
+                    <script type="text/javascript">
+                        let words = ["COMMUNICATION", "EFFICIENCY", "CONSISTENCY", "RESILIENCE"];
+                        let currIndex = 0;
+                        let wordElement = document.getElementById("word");
+
+                        function changeWord() {
+                            currIndex = (currIndex + 1) % words.length;
+                            wordElement.style.opacity = 0;
+
+                            setTimeout(function () {
+                                wordElement.innerText = words[currIndex];
+                                wordElement.style.opacity = 1;
+                            }, 1500);
+                        }
+
+                        // set initial word
+                        wordElement.innerText = words[currIndex];
+
+                        setInterval(changeWord, 3000);
+                    </script>
+                </div>
+                <p class="intro-paragraph">
+                    Diving into the professional world, I bring along a work ethic that reflects my values: communication, efficiency, consistency, and resilience. Recognizing the importance of communication within a team, I prioritize setting clear objectives, discussing processes, overcoming challenges, and celebrating successes. <br> <br>
+                    
+                    Efficiency with precision is always a goal of mine. I achieve this through my organizational skills, commitment to research, and continued perseverance. Regarding programming, I strive to code with low time complexity using algorithms, and providing comprehensive comments. <br> <br>
+                    
+                    Every project requires both consistency and resilience. We've all been there, contemplating whether to throw our laptops out the window, only to realize the missing semi-colon was the issue. But fear not! The struggle is real, but so are the rewards. Let the coding adventure begin!
+                </p>
+                <a href="sendmail/index.php" class="work-with-me-button">
+                    WORK WITH ME
+                </a>
+            </div>
+        </div>
+        <div class="about-me-section">
+            <div class="welcome-box">
+                <div class="about-me-grid">
+                    <div class ="about-me-left-side">
+                        <p class="welcome-text">ASPIRING</p>
+                        <p class="welcome-paragraph">Software Engineer.<br>UI/UX designer.<br>Data Analyst.</p>
+                        <a href="lexy_gregory_about.html" class="know-me-button">
+                            GET TO KNOW ME
+                        </a>
+                    </div>
+                    <div class="about-me-right-side">
+                        <img class="my-photo" src="images/lexy_photo.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects-section">
+            <div class="projects-title">
+                PROJECTS 
+            </div>
+            <div class="projects-grid">
+                <div class="project">
+                    <div class="project-image">
+                        <img class="project-photos" src="images/qkrt.jpeg">
+                    </div>
+                    <div class="project-name">Aim Bot</div>
+                    <div class="project-info">Designed the controls for turret actuation and object tracking. Responsible for QKRT’s offensive performance in the RoboMaster Robotics Competition.</div>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img class="project-photos" src="images/qmind.png">
+                    </div>
+                    <div class="project-name">AI Video Game Agents</div>
+                    <div class="project-info">Developed AI video game agents, using Python to set up the GVGAI gym environment. Used reinforcement learning algorithms to train agents. Tested and refined algorithm parameters.</div>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img class="project-photos" src="images/website.png">
+                    </div>
+                    <div class="project-name">Personal Website</div>
+                    <div class="project-info">Crafted visual elements using Figma. Built the website with the use of HTML, CSS, and JavaScript. Implemented a dynamic form using PHP and integrated Gmail SMTP. </div>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img class="project-photos" src="images/qweb.jpeg">
+                    </div>
+                    <div class="project-name">Household App</div>
+                    <div class="project-info">Developed an application that promotes communication amongst households: including shared calendar, shared lists, and notification board.</div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-section">
+            <div class="connect-title">
+                LET'S CONNECT
+            </div>
+            <div class="contacts-grid">
+                <div class="contact-phone">
+                    <img src="icons/phone.png" class="icon">
+                    <div class="contact-text">(778) 882-1503</div>
+                </div>
+                <div class="contact-mail">
+                    <img class="icon" src="icons/mail.png">
+                    <div class="contact-text">alexysgregory@gmail.com</div>
+                </div>
+                <button class="contact-linkedin" onclick="goToLinkedIn()">
+                    <img class="icon" src="icons/linkedin.png" alt="LinkedIn Icon">
+                    <div class="contact-text">LinkedIn</div>
+                </button>
+                
+                <script>
+                    function goToLinkedIn() {
+                        window.open("https://www.linkedin.com/in/lexy-gregory", "_blank");
+                    }
+                </script>
+            </div>
+        </div>
+    </main>
+    <script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexy Gregory's Website</title>
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/intro-page.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/projects.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-branding">LEXY GREGORY</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="lexy_gregory.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lexy_gregory_about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lexy_gregory_projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sendmail/index.php" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main> 
+        <div class="projects">
+            <div class="project-grid">
+                <div class="project1">
+                    <div class="project-image">
+                        <img class="project-photos" src="images/website.png">
+
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Personal Website</div>
+                        <div class="paragraph">
+                            Introducing my latest project – my personal website, a digital space designed and developed to showcase both style and functionality. I crafted the visual elements using Figma to ensure an engaging and user-friendly experience. Building the website involved the use of HTML, CSS, and JavaScript to bring it to life with interactivity. To enhance user engagement, I implemented a dynamic form using PHP. Additionally, I integrated Gmail SMTP for reliable communication, allowing visitors to easily connect with me. This project not only highlights my design and coding skills but also emphasizes my commitment to creating a unique online presence that reflects my individual identity.
+                        </div>
+                    </div>
+                </div>
+                <div class="project2">
+                    <div class="project-image">
+                        <img class="project-photos" src="images/qkrt.jpeg">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Aim Bot</div>
+                        <div class="paragraph">
+                            Engineered the controls for turret actuation and object tracking, providing manual control options for pilots to respond to movement and firing commands from various input/output devices. Made modifications to the gimbal system, emphasizing position control over velocity for enhanced precision. Contributing efforts to optimize QKRT's offensive performance in the RoboMaster Robotics Competition, showcasing a commitment to innovation and excellence in the field of robotics.
+                        </div>
+                    </div>
+                </div>
+                <div class="project3">
+                    <div class="project-image">
+                        <img class="project-photos" src="images/qmind.png">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">AI Video Game Agents</div>
+                        <div class="paragraph">
+                            Developed Artificially intelligent video game agents using Python within the dynamic GVGAI gym environment. Utilized deep reinforcement learning algorithms to train these agents, optimizing their decision-making capabilities. Iteratively tested and fine-tuned their performance, optimizing results through fine adjustments to algorithm parameters. The completion of this work was showcased at the Canadian Undergraduate Conference on Artificial Intelligence (CUCAI), reflecting a passion for the field and a commitment to sharing knowledge with peers.
+                        </div>
+                    </div>
+                </div>
+                <div class="project4">
+                    <div class="project-image">
+                        <img class="project-photos" src="images/qweb.jpeg">
+
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Household App</div>
+                        <div class="paragraph">
+                            Supported the development of a household communication application, facilitating straightforward interaction through features like a shared calendar, collaborative lists, and a notification board. Leading the front-end development phase, I designed the user interface using Figma, ensuring a visually captivating and user-friendly experience. Executed the design with precision, employing HTML and CSS to bring the envisioned application to life, emphasizing both functionality and aesthetic appeal.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-section">
+            <div class="connect-title">
+                LET'S CONNECT
+            </div>
+            <div class="contacts-grid">
+                <div class="contact-phone">
+                    <img src="icons/phone.png" class="icon">
+                    <div class="contact-text">(778) 882-1503</div>
+                </div>
+                <div class="contact-mail">
+                    <img class="icon" src="icons/mail.png">
+                    <div class="contact-text">alexysgregory@gmail.com</div>
+                </div>
+                <button class="contact-linkedin" onclick="goToLinkedIn()">
+                    <img class="icon" src="icons/linkedin.png" alt="LinkedIn Icon">
+                    <div class="contact-text">LinkedIn</div>
+                </button>
+                
+                <script>
+                    function goToLinkedIn() {
+                        window.open("https://www.linkedin.com/in/lexy-gregory", "_blank");
+                    }
+                </script>
+            </div>
+        </div>
+    </main>
+    <script src="nav.js"></script>
+</body>
+</html>

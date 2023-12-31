@@ -1,0 +1,10 @@
+p {
+    margin-top: 0; 
+    margin-bottom: 0; 
+}
+
+body {
+    padding-top: 65px;
+    margin: 0;
+    background-color: rgba(208, 206, 204, 1);
+}

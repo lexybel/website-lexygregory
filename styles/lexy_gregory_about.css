@@ -1,0 +1,173 @@
+.about-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(135deg, rgba(108, 119, 99, 1), rgb(197, 209, 187));
+    height: 650px;
+    z-index: 100;
+}
+
+.image-display {
+    position: relative;
+    width: 50%;
+}
+
+.bc-image-box {
+    margin-left: 30px;
+    width: 100%;
+    height: 525px;
+    background-color: rgb(62, 85, 60); 
+    z-index: 200; 
+}
+
+.bc-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 30px;
+    width: 100%;
+    height: 525px;
+    object-fit: cover;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(37, 48, 47, 1);
+    opacity: 1;
+    transition: width 3s ease-in-out, opacity 3s ease-in-out;
+    z-index: 800;
+}
+
+.introduction {
+    flex: 1;
+    margin-left: 120px;
+    z-index: 400;
+}
+
+.hello{
+    color: rgb(229, 229, 229);
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.intro-paragraph{
+    color: rgb(229, 229, 229);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about-page-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(37, 48, 47, 1);
+    height: 650px;
+    margin-top: -250px;
+    padding-top: 150px;
+    z-index: 200;
+}
+
+.get-to-know{
+    color: rgb(229, 229, 229);
+    font-family: 'Didot', serif, 'Times New Roman', Times, sans-serif; 
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 25px;   
+    margin-top: 60px;
+    padding-bottom: 10px;
+}
+
+.text-about-me{
+    flex: 2;
+    margin-left: 25px;
+    color: rgb(229, 229, 229);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding-right: 25px;
+}
+
+.photo-of-me{
+    padding-top: 20px;
+    flex: 1;
+    height: 450px;
+    width: 400px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.fun-stuff-about-me{
+    background-image: linear-gradient(90deg, rgba(150, 138, 131, 1), rgb(119, 108, 103));
+    height: 550px;
+}
+
+.fun-title{
+    padding-top: 20px;
+    text-align: center;
+    color: rgb(47, 42, 39);
+    font-family: 'Didot', serif, 'Times New Roman', Times, sans-serif; 
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.scroll-container {
+    color: rgb(77, 73, 73);
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  .scroll-container img {
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+    border-style: solid;
+    border-color: rgb(47, 42, 39);
+    border-width: 2px;
+  }
+
+@media(max-width:900px){
+    .image-display{
+        width: 100%;
+    }
+    .about-page{
+        height: 850px;
+        max-width: 100%;
+    }
+    .about-page-2{
+        max-width: 100%;
+        padding-top: 0px;
+        margin-top: -200px;
+        height: 900px;
+        display: grid; 
+        grid-template-columns: 1fr;
+    }
+    .bc-images{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        max-width:900px;
+    }
+    .bc-image-box {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        max-width:900px;
+    }
+    .introduction {
+        margin-left: 0px;
+        align-items: center;
+    }
+    .about-page{
+        flex-direction: column;
+    }
+    .get-to-know{
+        margin-top: 0px;
+    }
+    .photo-of-me{
+        padding-top: 0px;
+        margin-bottom: 25px;
+        margin-left: 20%
+    }
+}

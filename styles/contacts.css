@@ -1,0 +1,160 @@
+.contacts-page {
+    position: relative;
+}
+
+.snow-image-box {
+    position: absolute;
+    background-color: rgba(28, 37, 36, 0.2);  /* Opacity is set to 60% */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+.snow-image {
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.contact-me{
+    position: relative;
+    color: rgb(229, 229, 229);
+    font-family: 'Didot', serif, 'Times New Roman', Times, sans-serif;
+    font-size: 35px;
+    top: -180px;
+    left: 30px;
+    margin-bottom: 40px;
+}
+
+.form-box {
+    position: absolute;
+    background-color: rgb(36, 41, 55);
+    opacity: 90%; 
+    width: 55%;
+    height: 500px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 10;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+}
+
+form {
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+label {
+    color: rgb(198, 196, 196);
+    display: block;
+    margin-bottom: 5px;
+    max-width: 350px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    max-width: 350px; 
+}
+
+textarea {
+    max-height: 150px; 
+    resize: vertical;  
+}
+
+input[type="submit"] {
+    background-color: rgb(72, 105, 79);
+    border-style: solid;
+    border-color: rgb(118, 159, 127);
+    border-width: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.thank-you-box {
+    position: absolute;
+    background-color: rgb(36, 41, 55);
+    opacity: 90%; 
+    width: 55%;
+    max-width: 800px;
+    height: 400px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 10;
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+}
+
+.thank-you-text{
+    color: rgb(228, 227, 227);
+    font-size: 20px;
+}
+
+
+.thank-you{
+    align-items: center;
+    padding-top: 100px;
+}
+
+.thanks-contact-me{
+    position: relative;
+    color: rgb(229, 229, 229);
+    font-family: 'Didot', serif, 'Times New Roman', Times, sans-serif;
+    font-size: 35px;
+    top: auto;
+    left: auto;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+@media(max-width:600px){
+    .thank-you-box{
+        width: 70%;
+    }
+}
+
+@media(max-width:730px){
+
+    .contact-me{
+        top: auto;
+        padding-top: 20px;
+        left: auto;
+        margin-bottom: 0px;
+    }
+    .form-box{
+        flex-direction: column;
+    }
+    .thank-you-box{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:1100px){
+    .form-box{
+        width: 70%;
+    }
+}
+
+@media(min-width:1100px){
+    .contact-me{
+        flex: 1;
+    }
+    .form-box{
+        flex: 1;
+        padding-right: 100px;
+        display: flex;
+        justify-content: center;
+    }
+}
