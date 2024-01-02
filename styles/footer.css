@@ -92,8 +92,19 @@
 }
 
 @media(max-width:400px){
-    .contacts-grid {
-        display: grid;
-        grid-template-columns: 1fr;
+    .contact-phone, .contact-mail, .contact-linkedin {
+        width: 30%;
+        min-width: 130px;
+        height: 30px;
     }
+    .icon {
+        width: 20px;
+        height: 15px;
+        padding: 2px;
+    }
+    
+    .contact-text {
+        font-size: 12px;
+    }
+
 }
