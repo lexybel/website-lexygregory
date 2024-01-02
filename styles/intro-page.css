@@ -279,3 +279,12 @@
         margin-top:-15px;
     }
 }
+
+@media(max-width:400px){
+    .tree-image-box, .tree-image {
+        height: 800px;
+    }
+    .intro-box{
+        height: 700px;
+    }
+}
