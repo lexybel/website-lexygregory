@@ -173,6 +173,9 @@
 }
     
 @media(max-width:400px){
+    .about-page {
+        height: 475px;
+    }
     .bc-image-box, .bc-images {
         height: 350px;
     }
