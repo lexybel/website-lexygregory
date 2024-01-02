@@ -93,9 +93,19 @@
 
 @media(max-width:400px){
     .contact-phone, .contact-mail, .contact-linkedin {
-        width: 30%;
-        min-width: 130px;
         height: 30px;
+    }
+    .contact-mail{
+        width: 45%;
+        min-width: 110px;
+    }
+    .contact-linkedin {
+        width: 20%;
+        min-width: 100px;
+    }
+    .contact-phone {
+        width: 25%;
+        min-width: 100px;
     }
     .icon {
         width: 20px;

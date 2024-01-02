@@ -171,3 +171,13 @@
         margin-left: 20%
     }
 }
+    
+@media(max-width:400px){
+    .bc-image-box, .bc-images {
+        height: 350px;
+    }
+    .about-page-2{
+        height: 750px;
+    }
+    
+}
