@@ -287,4 +287,10 @@
     .intro-box{
         height: 700px;
     }
+    .intro-box{
+        width: 85%;
+    }
+    .projects-grid {
+        gap: 40px;
+    }
 }
